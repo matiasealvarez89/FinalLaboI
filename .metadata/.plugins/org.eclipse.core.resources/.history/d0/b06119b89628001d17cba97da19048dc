@@ -1,0 +1,38 @@
+#ifndef Pokemon_H_
+#define Pokemon_H_
+
+typedef struct
+{
+	int numero;
+	char nombre[50];
+	char tipo[50];
+	char tamanio[50];
+	char ataqueCargado[50];//
+	int valorAtaque;
+	int esVaricolor;
+}Pokemon;
+
+#endif /* Pokemon_H_ */
+
+Pokemon* Pokemon_New();
+Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+int Pokemon_SetNumero(Pokemon* this, int numero);
+int Pokemon_GetNumero(Pokemon* this, int* numero);
+int Pokemon_SetNombre(Pokemon* this, char* nombre);
+int Pokemon_GetNombre(Pokemon* this, char* nombre);
+int Pokemon_SetValorAtaque(Pokemon* this, int valorAtaque);
+int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque);
+int Pokemon_SetEsVaricolor(Pokemon* this, int esVaricolor);
+int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor);
+char Pokemon_SetTipo(Pokemon* this, char* tipo);
+char Pokemon_GetTipo(Pokemon* this, char* tipo);
+char Pokemon_SetTamanio(Pokemon* this, char* tamanio);
+char Pokemon_GetTamanio(Pokemon* this, char* tamanio);
+char Pokemon_SetAtaqueCargado(Pokemon* this, char* ataqueCargado);
+char Pokemon_GetAtaqueCargado(Pokemon* this, char* ataqueCargado);
+
+
+
+
+
+

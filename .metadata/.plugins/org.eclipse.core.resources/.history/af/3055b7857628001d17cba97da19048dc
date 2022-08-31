@@ -1,0 +1,14 @@
+#ifndef GENERICO_H_
+#define GENERICO_H_
+
+typedef struct
+{
+	int id;
+	char nombre[50];
+	int dias;
+	char raza[50];
+	char reservado[50];
+	char genero[50];
+}Generico;
+
+#endif /* GENERICO_H_ */

@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "LinkedList.h"
+#include "pedidoDatos.h"
+#include "Controller.h"
+
+int main(void) {
+	setbuf(stdout, NULL);
+
+	LinkedList* listaPokemon;
+	listaPokemon = ll_newLinkedList();
+	int cantidad;
+	int ocpion;
+
+	do
+	{
+		printf("\n1. Cargar archivos de Pokemon\n"
+				"2. Eleminar Pokemon\n"
+				"3. Imprmier Pokemones\n"
+				"4. Filtrar de tipo Aguar Varicolor\n"
+				"5. Mapear Ataque Cargado\n"
+				"6. Batalla Pokemon\n"
+				"10. Salir\n");
+
+		if(!getNumero(&opcion, "Ingrese la opcion deseada\n", "Ingreso incorrecto\n", 1, 10, 5))
+		{
+			switch(opcion)
+			{
+			}
+		}
+
+
+	}while(respuesta != 10);
+
+
+
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,35 @@
+#ifndef GENERICO_H_
+#define GENERICO_H_
+
+typedef struct
+{
+	int id;
+	char nombreGenerico[50];
+	int numUno;
+	int numDos;
+	char stringUno[50];
+	char stringDos[50];
+}Generico;
+
+#endif /* GENERICO_H_ */
+
+Generico* Generico_New();
+Generico* Generico_NewParametros(char* idStr, char* nombreStr, char* numUnoStr, char* numDosStr, char* stringUnoStr, char* stringDosStr);
+int Generico_SetId(Generico* this, int id);
+int Generico_GetId(Generico* this, int* id);
+int Generico_SetNombre(Generico* this, char* nombreGenerico);
+int Generico_GetNombre(Generico* this, char* nombreGenerico);
+int Generico_SetNumUno(Generico* this, int numUno);
+int Generico_GetNumUno(Generico* this, int* numUno);
+int Generico_SetNumDos(Generico* this, int numDos);
+int Generico_GetnumDos(Generico* this, int* numDos);
+char Generico_SetStringUno(Generico* this, char* stringUno);
+char Generico_GetStringUno(Generico* this, char* stringUno);
+char Generico_SetStringDos(Generico* this, char* stringDos);
+char Generico_GetstringDos(Generico* this, char* stringDos);
+
+
+
+
+
+

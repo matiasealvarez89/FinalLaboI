@@ -1,0 +1,223 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "pedidoDatos.h"
+#include "LinkedList.h"
+#include "Pokemon.h"
+
+
+Pokemon* Pokemon_New()
+{
+	Pokemon* pNuevaPokemon;
+
+	pNuevaPokemon = NULL;
+	pNuevaPokemon = (Pokemon*)calloc(sizeof(Pokemon),1);
+
+	return pNuevaPokemon;
+}
+
+Pokemon* Pokemon_NewParametros(char* idStr, char* nombreStr, char* numUnoStr, char* numDosStr, char* stringUnoStr, char* stringDosStr)
+{
+	Pokemon* pNuevaPokemon = NULL;
+	Pokemon* pPokemonAux;
+	int auxID;
+	int auxNumUnoStr;
+	int auxNumDosStr;
+
+	pPokemonAux = Pokemon_New();
+
+	if(pPokemonAux != NULL && idStr != NULL && nombreStr != NULL && numUnoStr != NULL && numDosStr != NULL && stringUnoStr != NULL && stringDosStr != NULL)
+	{
+		auxID = atoi(idStr);
+		auxNumUnoStr = atoi(numUnoStr);
+		auxNumDosStr = atoi(numDosStr);
+
+
+		if(!Pokemon_SetId(pPokemonAux, auxID) && !Pokemon_SetNombre(pPokemonAux, nombreStr) && !Pokemon_SetNumUno(pPokemonAux, auxNumUnoStr)
+				&& !Pokemon_SetNumDos(pPokemonAux, auxNumDosStr) && !Pokemon_SetStringUno(pPokemonAux, stringUnoStr)
+				&& !Pokemon_SetStringDos(pPokemonAux, stringDosStr))
+		{
+			pNuevaPokemon = pPokemonAux;
+		}
+	}
+
+	return pNuevaPokemon;
+}
+
+int Pokemon_SetId(Pokemon* this, int id)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && id >= 0)
+	{
+		this->id = id;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_GetId(Pokemon* this, int* id)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && id != NULL)
+	{
+		*id = this->id;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_SetNombre(Pokemon* this, char* nombrePokemon)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && nombrePokemon != NULL)
+	{
+		strcpy(this->nombrePokemon, nombrePokemon);
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_GetNombre(Pokemon* this, char* nombrePokemon)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && nombrePokemon != NULL)
+	{
+		strcpy(nombrePokemon, this->nombrePokemon);
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int Pokemon_SetNumUno(Pokemon* this, int numUno)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numUno >= 0)
+	{
+		this->numUno = numUno;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_GetNumUno(Pokemon* this, int* numUno)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numUno != NULL)
+	{
+		*numUno = this->numUno;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+
+int Pokemon_SetNumDos(Pokemon* this, int numDos)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numDos >= 0)
+	{
+		this->numDos = numDos;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_GetnumDos(Pokemon* this, int* numDos)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numDos != NULL)
+	{
+		*numDos = this->numDos;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+char Pokemon_SetStringUno(Pokemon* this, char* stringUno)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && stringUno != NULL)
+		{
+			strcpy(this->stringUno, stringUno);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+char Pokemon_GetStringUno(Pokemon* this, char* stringUno)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && stringUno != NULL)
+		{
+			strcpy(stringUno, this->stringUno);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+char Pokemon_SetStringDos(Pokemon* this, char* stringDos)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && stringDos != NULL)
+		{
+			strcpy(this->stringUno, stringDos);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+char Pokemon_GetstringDos(Pokemon* this, char* stringDos)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && stringDos != NULL)
+		{
+			strcpy(stringDos, this->stringDos);
+			retorno = 0;
+		}
+		return retorno;
+}

@@ -1,0 +1,1559 @@
+11:11:41 **** Rebuild of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Final.o" 
+11:11:56 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Final.o" 
+11:20:08 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c:4:23: fatal error: Passenger.h: No such file or directory
+ #include "Passenger.h"
+                       ^
+compilation terminated.
+11:28:09 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c:4:23: fatal error: Passenger.h: No such file or directory
+ #include "Passenger.h"
+                       ^
+compilation terminated.
+11:28:24 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Generico.o" "..\\src\\Generico.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_GenericoFromText':
+..\src\parser.c:37:21: warning: implicit declaration of function 'Generico_newParametros' [-Wimplicit-function-declaration]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                   ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Generico_delete' [-Wimplicit-function-declaration]
+      Generico_delete(nuevoGenerico);
+      ^~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_GenericoFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+    pPasajero = Generico_new();
+                ^~~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Generico_new();
+              ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cachorro.o" "..\\src\\Cachorro.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pedidoDatos.o" "..\\src\\pedidoDatos.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Final.o" "src\\Generico.o" "src\\LinkedList.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\parser.o: In function `parser_GenericoFromText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:37: undefined reference to `Generico_newParametros'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:47: undefined reference to `Generico_delete'
+src\parser.o: In function `parser_GenericoFromBinary':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:75: undefined reference to `Generico_new'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:83: undefined reference to `Generico_delete'
+collect2.exe: error: ld returned 1 exit status
+12:15:03 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Generico.o" "..\\src\\Generico.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_GenericoFromText':
+..\src\parser.c:37:21: warning: implicit declaration of function 'Generico_newParametros' [-Wimplicit-function-declaration]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                   ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Generico_delete' [-Wimplicit-function-declaration]
+      Generico_delete(nuevoGenerico);
+      ^~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_GenericoFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+    pPasajero = Generico_new();
+                ^~~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Generico_new();
+              ^
+gcc -o Final.exe "src\\Cachorro.o" "src\\Final.o" "src\\Generico.o" "src\\LinkedList.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\parser.o: In function `parser_GenericoFromText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:37: undefined reference to `Generico_newParametros'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:47: undefined reference to `Generico_delete'
+src\parser.o: In function `parser_GenericoFromBinary':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:75: undefined reference to `Generico_new'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:83: undefined reference to `Generico_delete'
+collect2.exe: error: ld returned 1 exit status
+12:38:17 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Generico.o" "..\\src\\Generico.c" 
+..\src\Generico.c: In function 'Generico_newParametros':
+..\src\Generico.c:27:17: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+  pGenericoAux = Generico_new();
+                 ^~~~~~~~~~~~
+..\src\Generico.c:27:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  pGenericoAux = Generico_new();
+               ^
+..\src\Generico.c:34:7: warning: implicit declaration of function 'Generico_setAll' [-Wimplicit-function-declaration]
+   if(!Generico_setAll(pGenericoAux, auxID, nombreStr, auxNumUnoStr, razaStr, reservadoStr, generoStr))
+       ^~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_GenericoFromText':
+..\src\parser.c:37:21: warning: implicit declaration of function 'Generico_newParametros' [-Wimplicit-function-declaration]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                   ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Generico_delete' [-Wimplicit-function-declaration]
+      Generico_delete(nuevoGenerico);
+      ^~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_GenericoFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+    pPasajero = Generico_new();
+                ^~~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Generico_new();
+              ^
+gcc -o Final.exe "src\\Cachorro.o" "src\\Final.o" "src\\Generico.o" "src\\LinkedList.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Generico.o: In function `Generico_newParametros':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Generico.c:27: undefined reference to `Generico_new'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Generico.c:34: undefined reference to `Generico_setAll'
+src\parser.o: In function `parser_GenericoFromText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:47: undefined reference to `Generico_delete'
+src\parser.o: In function `parser_GenericoFromBinary':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:75: undefined reference to `Generico_new'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:83: undefined reference to `Generico_delete'
+collect2.exe: error: ld returned 1 exit status
+14:15:32 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Generico.o" "..\\src\\Generico.c" 
+..\src\Generico.c: In function 'Generico_NewParametros':
+..\src\Generico.c:30:112: error: 'reservadoStr' undeclared (first use in this function)
+  if(pGenericoAux != NULL && idStr != NULL && nombreStr != NULL && numUnoStr != NULL && stringUnoStr != NULL && reservadoStr != NULL && generoStr != NULL)
+                                                                                                                ^~~~~~~~~~~~
+..\src\Generico.c:30:112: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Generico.c:30:136: error: 'generoStr' undeclared (first use in this function)
+  if(pGenericoAux != NULL && idStr != NULL && nombreStr != NULL && numUnoStr != NULL && stringUnoStr != NULL && reservadoStr != NULL && generoStr != NULL)
+                                                                                                                                        ^~~~~~~~~
+..\src\Generico.c:35:7: warning: implicit declaration of function 'Generico_setAll' [-Wimplicit-function-declaration]
+   if(!Generico_setAll(pGenericoAux, auxID, nombreStr, auxNumUnoStr, stringUnoStr, reservadoStr, generoStr))
+       ^~~~~~~~~~~~~~~
+..\src\Generico.c:26:6: warning: unused variable 'auxNumDosStr' [-Wunused-variable]
+  int auxNumDosStr;
+      ^~~~~~~~~~~~
+14:16:54 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_GenericoFromText':
+..\src\parser.c:37:21: warning: implicit declaration of function 'Generico_newParametros' [-Wimplicit-function-declaration]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                   ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Generico_delete' [-Wimplicit-function-declaration]
+      Generico_delete(nuevoGenerico);
+      ^~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_GenericoFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+    pPasajero = Generico_new();
+                ^~~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Generico_new();
+              ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Generico.o" "..\\src\\Generico.c" 
+..\src\Generico.c: In function 'Generico_NewParametros':
+..\src\Generico.c:35:7: warning: implicit declaration of function 'Generico_setAll' [-Wimplicit-function-declaration]
+   if(!Generico_setAll(pGenericoAux, auxID, nombreStr, auxNumUnoStr, stringUnoStr, reservadoStr, generoStr))
+       ^~~~~~~~~~~~~~~
+..\src\Generico.c:35:83: error: 'reservadoStr' undeclared (first use in this function)
+   if(!Generico_setAll(pGenericoAux, auxID, nombreStr, auxNumUnoStr, stringUnoStr, reservadoStr, generoStr))
+                                                                                   ^~~~~~~~~~~~
+..\src\Generico.c:35:83: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Generico.c:35:97: error: 'generoStr' undeclared (first use in this function)
+   if(!Generico_setAll(pGenericoAux, auxID, nombreStr, auxNumUnoStr, stringUnoStr, reservadoStr, generoStr))
+                                                                                                 ^~~~~~~~~
+..\src\Generico.c:26:6: warning: unused variable 'auxNumDosStr' [-Wunused-variable]
+  int auxNumDosStr;
+      ^~~~~~~~~~~~
+14:46:32 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_GenericoFromText':
+..\src\parser.c:37:21: warning: implicit declaration of function 'Generico_newParametros' [-Wimplicit-function-declaration]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                   ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Generico_delete' [-Wimplicit-function-declaration]
+      Generico_delete(nuevoGenerico);
+      ^~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_GenericoFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+    pPasajero = Generico_new();
+                ^~~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Generico_new();
+              ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Generico.o" "..\\src\\Generico.c" 
+..\src\Generico.c: In function 'Generico_NewParametros':
+..\src\Generico.c:37:95: warning: implicit declaration of function 'Generico_SetnumUno' [-Wimplicit-function-declaration]
+   if(!Generico_SetId(pGenericoAux, auxID) && !Generico_SetNombre(pGenericoAux, nombreStr) && !Generico_SetnumUno(pGenericoAux, auxNumUnoStr)
+                                                                                               ^~~~~~~~~~~~~~~~~~
+..\src\Generico.c:38:9: warning: implicit declaration of function 'Generico_SetnumDos' [-Wimplicit-function-declaration]
+     && !Generico_SetnumDos(pGenericoAux, auxNumDosStr) && !Generico_SetStringUno(pGenericoAux, stringUnoStr)
+         ^~~~~~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Final.o" "src\\Generico.o" "src\\LinkedList.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Generico.o: In function `Generico_NewParametros':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Generico.c:37: undefined reference to `Generico_SetnumUno'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Generico.c:38: undefined reference to `Generico_SetnumDos'
+src\parser.o: In function `parser_GenericoFromText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:37: undefined reference to `Generico_newParametros'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:47: undefined reference to `Generico_delete'
+src\parser.o: In function `parser_GenericoFromBinary':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:75: undefined reference to `Generico_new'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:83: undefined reference to `Generico_delete'
+collect2.exe: error: ld returned 1 exit status
+14:47:32 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Generico.o" "..\\src\\Generico.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Final.o" "src\\Generico.o" "src\\LinkedList.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\parser.o: In function `parser_GenericoFromText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:37: undefined reference to `Generico_newParametros'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:47: undefined reference to `Generico_delete'
+src\parser.o: In function `parser_GenericoFromBinary':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:75: undefined reference to `Generico_new'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:83: undefined reference to `Generico_delete'
+collect2.exe: error: ld returned 1 exit status
+15:38:04 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_GenericoFromText':
+..\src\parser.c:16:2: error: unknown type name 'Generico'
+  Generico* nuevoGenerico;
+  ^~~~~~~~
+..\src\parser.c:37:21: warning: implicit declaration of function 'Generico_newParametros' [-Wimplicit-function-declaration]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                   ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Generico_delete' [-Wimplicit-function-declaration]
+      Generico_delete(nuevoGenerico);
+      ^~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_GenericoFromBinary':
+..\src\parser.c:67:2: error: unknown type name 'Generico'
+  Generico* pPasajero;
+  ^~~~~~~~
+..\src\parser.c:75:16: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+    pPasajero = Generico_new();
+                ^~~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Generico_new();
+              ^
+..\src\parser.c:76:52: error: 'Generico' undeclared (first use in this function)
+    if(pPasajero != NULL && fread(pPasajero, sizeof(Generico), 1, pFile) == 1)
+                                                    ^~~~~~~~
+..\src\parser.c:76:52: note: each undeclared identifier is reported only once for each function it appears in
+18:36:48 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:273:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:121:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:273:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+In file included from ..\src\Pokemon.c:7:0:
+..\src\Pokemon.h:26:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor);
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:291:50: warning: passing argument 4 of 'Pokemon_GetAll' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, &auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                  ^
+..\src\Pokemon.c:267:5: note: expected 'char *' but argument is of type 'char (*)[50]'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:291:90: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, &auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                          ^
+..\src\Pokemon.c:267:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:291:107: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, &auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                           ^
+..\src\Pokemon.c:267:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:293:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("%d\t%s\t\t%s\t\t%s\t\t%s\t\t%d\t&d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_GenericoFromText':
+..\src\parser.c:16:2: error: unknown type name 'Generico'
+  Generico* nuevoGenerico;
+  ^~~~~~~~
+..\src\parser.c:37:21: warning: implicit declaration of function 'Generico_newParametros' [-Wimplicit-function-declaration]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                   ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Generico_delete' [-Wimplicit-function-declaration]
+      Generico_delete(nuevoGenerico);
+      ^~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_GenericoFromBinary':
+..\src\parser.c:67:2: error: unknown type name 'Generico'
+  Generico* pPasajero;
+  ^~~~~~~~
+..\src\parser.c:75:16: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+    pPasajero = Generico_new();
+                ^~~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Generico_new();
+              ^
+..\src\parser.c:76:52: error: 'Generico' undeclared (first use in this function)
+    if(pPasajero != NULL && fread(pPasajero, sizeof(Generico), 1, pFile) == 1)
+                                                    ^~~~~~~~
+..\src\parser.c:76:52: note: each undeclared identifier is reported only once for each function it appears in
+18:38:07 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_GenericoFromText':
+..\src\parser.c:16:2: error: unknown type name 'Generico'
+  Generico* nuevoGenerico;
+  ^~~~~~~~
+..\src\parser.c:37:21: warning: implicit declaration of function 'Generico_newParametros' [-Wimplicit-function-declaration]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoGenerico = Generico_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                   ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Generico_delete' [-Wimplicit-function-declaration]
+      Generico_delete(nuevoGenerico);
+      ^~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_GenericoFromBinary':
+..\src\parser.c:67:2: error: unknown type name 'Generico'
+  Generico* pPasajero;
+  ^~~~~~~~
+..\src\parser.c:75:16: warning: implicit declaration of function 'Generico_new' [-Wimplicit-function-declaration]
+    pPasajero = Generico_new();
+                ^~~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Generico_new();
+              ^
+..\src\parser.c:76:52: error: 'Generico' undeclared (first use in this function)
+    if(pPasajero != NULL && fread(pPasajero, sizeof(Generico), 1, pFile) == 1)
+                                                    ^~~~~~~~
+..\src\parser.c:76:52: note: each undeclared identifier is reported only once for each function it appears in
+18:40:19 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:273:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:121:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:273:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:152:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:291:50: warning: passing argument 4 of 'Pokemon_GetAll' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, &auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                  ^
+..\src\Pokemon.c:267:5: note: expected 'char *' but argument is of type 'char (*)[50]'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:291:90: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, &auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                          ^
+..\src\Pokemon.c:267:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:291:107: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, &auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                           ^
+..\src\Pokemon.c:267:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:293:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("%d\t%s\t\t%s\t\t%s\t\t%s\t\t%d\t&d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: warning: implicit declaration of function 'Pokemon_newParametros' [-Wimplicit-function-declaration]
+     nuevoPokemon = Pokemon_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                    ^~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:37:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     nuevoPokemon = Pokemon_newParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                  ^
+..\src\parser.c:47:6: warning: implicit declaration of function 'Pokemon_delete' [-Wimplicit-function-declaration]
+      Pokemon_delete(nuevoPokemon);
+      ^~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_PokemonFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Pokemon_new' [-Wimplicit-function-declaration]
+    pPasajero = Pokemon_new();
+                ^~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Pokemon_new();
+              ^
+gcc -o Final.exe "src\\Cachorro.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\parser.o: In function `parser_PokemonFromText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:37: undefined reference to `Pokemon_newParametros'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:47: undefined reference to `Pokemon_delete'
+src\parser.o: In function `parser_PokemonFromBinary':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:75: undefined reference to `Pokemon_new'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/parser.c:83: undefined reference to `Pokemon_delete'
+collect2.exe: error: ld returned 1 exit status
+18:42:17 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:47:6: warning: implicit declaration of function 'Pokemon_delete' [-Wimplicit-function-declaration]
+      Pokemon_delete(nuevoPokemon);
+      ^~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_PokemonFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Pokemon_new' [-Wimplicit-function-declaration]
+    pPasajero = Pokemon_new();
+                ^~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Pokemon_new();
+              ^
+20:51:01 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(id, nombre, apellido, precio, codigoVuelo, tipoPasajero, flightStatus);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c:47:6: warning: implicit declaration of function 'Pokemon_delete' [-Wimplicit-function-declaration]
+      Pokemon_delete(nuevoPokemon);
+      ^~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_PokemonFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Pokemon_new' [-Wimplicit-function-declaration]
+    pPasajero = Pokemon_new();
+                ^~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Pokemon_new();
+              ^
+20:59:13 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:282:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:130:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:282:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:161:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:300:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:276:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:300:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:276:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:7:23: fatal error: Passenger.h: No such file or directory
+ #include "Passenger.h"
+                       ^
+compilation terminated.
+21:02:52 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, valorAtaque, ataqueCargado, esVaricolor);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_PokemonFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Pokemon_new' [-Wimplicit-function-declaration]
+    pPasajero = Pokemon_new();
+                ^~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Pokemon_new();
+              ^
+21:08:19 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, valorAtaque, ataqueCargado, esVaricolor);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_PokemonFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Pokemon_new' [-Wimplicit-function-declaration]
+    pPasajero = Pokemon_new();
+                ^~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Pokemon_new();
+              ^
+21:09:51 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, valorAtaque, ataqueCargado, esVaricolor);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_PokemonFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Pokemon_new' [-Wimplicit-function-declaration]
+    pPasajero = Pokemon_new();
+                ^~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Pokemon_new();
+              ^
+21:12:19 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+In file included from ..\src\Controller.c:7:0:
+..\src\Pokemon.h:18:131: error: redefinition of parameter 'tipoStr'
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+                                                                                                                                   ^~~~~~~
+In file included from ..\src\Controller.c:7:0:
+..\src\Pokemon.h:18:72: note: previous definition of 'tipoStr' was here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+                                                                        ^~~~~~~
+..\src\Controller.c: In function 'controller_loadFromText':
+..\src\Controller.c:32:14: warning: implicit declaration of function 'parser_PokemonFromText' [-Wimplicit-function-declaration]
+    retorno = parser_PokemonFromText(pFile, pArrayListPokemon);
+              ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_loadFromBinary':
+..\src\Controller.c:60:4: warning: implicit declaration of function 'parser_PokemonFromBinary' [-Wimplicit-function-declaration]
+    parser_PokemonFromBinary(pFile, pArrayListPokemon);
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_removePokemon':
+..\src\Controller.c:97:15: warning: implicit declaration of function 'Pokemon_findById' [-Wimplicit-function-declaration]
+       index = Pokemon_findById(pArrayListPokemon, idPokemon);
+               ^~~~~~~~~~~~~~~~
+..\src\Controller.c:103:8: warning: implicit declaration of function 'Pokemon_printUnPokemon' [-Wimplicit-function-declaration]
+        Pokemon_printUnPokemon(pPokemon);
+        ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:230:9: warning: implicit declaration of function 'Pokemon_getAll' [-Wimplicit-function-declaration]
+     if(!Pokemon_getAll(pPokemon, &auxId, auxNombre, auxApellido, &auxPrecioFloat, &auxTipoPokemonint,
+         ^~~~~~~~~~~~~~
+21:18:52 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+In file included from ..\src\Controller.c:7:0:
+..\src\Pokemon.h:18:131: error: redefinition of parameter 'tipoStr'
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+                                                                                                                                   ^~~~~~~
+In file included from ..\src\Controller.c:7:0:
+..\src\Pokemon.h:18:72: note: previous definition of 'tipoStr' was here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+                                                                        ^~~~~~~
+..\src\Controller.c: In function 'Controller_loadFromText':
+..\src\Controller.c:32:14: warning: implicit declaration of function 'Parser_PokemonFromText' [-Wimplicit-function-declaration]
+    retorno = Parser_PokemonFromText(pFile, pArrayListPokemon);
+              ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_loadFromBinary':
+..\src\Controller.c:60:4: warning: implicit declaration of function 'parser_PokemonFromBinary' [-Wimplicit-function-declaration]
+    parser_PokemonFromBinary(pFile, pArrayListPokemon);
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_removePokemon':
+..\src\Controller.c:97:15: warning: implicit declaration of function 'Pokemon_findById' [-Wimplicit-function-declaration]
+       index = Pokemon_findById(pArrayListPokemon, idPokemon);
+               ^~~~~~~~~~~~~~~~
+..\src\Controller.c:103:8: warning: implicit declaration of function 'Pokemon_printUnPokemon' [-Wimplicit-function-declaration]
+        Pokemon_printUnPokemon(pPokemon);
+        ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_SaveAsText':
+..\src\Controller.c:230:9: warning: implicit declaration of function 'Pokemon_getAll' [-Wimplicit-function-declaration]
+     if(!Pokemon_getAll(pPokemon, &auxId, auxNombre, auxApellido, &auxPrecioFloat, &auxTipoPokemonint,
+         ^~~~~~~~~~~~~~
+21:20:22 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+In file included from ..\src\Pokemon.c:7:0:
+..\src\Pokemon.h:18:131: error: redefinition of parameter 'tipoStr'
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+                                                                                                                                   ^~~~~~~
+In file included from ..\src\Pokemon.c:7:0:
+..\src\Pokemon.h:18:72: note: previous definition of 'tipoStr' was here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr);
+                                                                        ^~~~~~~
+..\src\Pokemon.c:23:131: error: redefinition of parameter 'tipoStr'
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr)
+                                                                                                                                   ^~~~~~~
+..\src\Pokemon.c:23:72: note: previous definition of 'tipoStr' was here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr)
+                                                                        ^~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:282:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:130:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:282:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:161:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:300:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:276:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:300:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:276:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+21:21:43 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_loadFromText':
+..\src\Controller.c:32:14: warning: implicit declaration of function 'parser_PokemonFromText' [-Wimplicit-function-declaration]
+    retorno = parser_PokemonFromText(pFile, pArrayListPokemon);
+              ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_loadFromBinary':
+..\src\Controller.c:60:4: warning: implicit declaration of function 'parser_PokemonFromBinary' [-Wimplicit-function-declaration]
+    parser_PokemonFromBinary(pFile, pArrayListPokemon);
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_removePokemon':
+..\src\Controller.c:97:15: warning: implicit declaration of function 'Pokemon_findById' [-Wimplicit-function-declaration]
+       index = Pokemon_findById(pArrayListPokemon, idPokemon);
+               ^~~~~~~~~~~~~~~~
+..\src\Controller.c:103:8: warning: implicit declaration of function 'Pokemon_printUnPokemon' [-Wimplicit-function-declaration]
+        Pokemon_printUnPokemon(pPokemon);
+        ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_SaveAsText':
+..\src\Controller.c:230:9: warning: implicit declaration of function 'Pokemon_getAll' [-Wimplicit-function-declaration]
+     if(!Pokemon_getAll(pPokemon, &auxId, auxNombre, auxApellido, &auxPrecioFloat, &auxTipoPokemonint,
+         ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, valorAtaque, ataqueCargado, esVaricolor);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tamanioStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_PokemonFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Pokemon_new' [-Wimplicit-function-declaration]
+    pPasajero = Pokemon_new();
+                ^~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Pokemon_new();
+              ^
+21:22:01 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, valorAtaque, ataqueCargado, esVaricolor);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tamanioStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+..\src\parser.c: In function 'parser_PokemonFromBinary':
+..\src\parser.c:75:16: warning: implicit declaration of function 'Pokemon_new' [-Wimplicit-function-declaration]
+    pPasajero = Pokemon_new();
+                ^~~~~~~~~~~
+..\src\parser.c:75:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    pPasajero = Pokemon_new();
+              ^
+21:23:33 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_removePokemon':
+..\src\Controller.c:97:15: warning: implicit declaration of function 'Pokemon_findById' [-Wimplicit-function-declaration]
+       index = Pokemon_findById(pArrayListPokemon, idPokemon);
+               ^~~~~~~~~~~~~~~~
+..\src\Controller.c:103:8: warning: implicit declaration of function 'Pokemon_printUnPokemon' [-Wimplicit-function-declaration]
+        Pokemon_printUnPokemon(pPokemon);
+        ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_SaveAsText':
+..\src\Controller.c:230:9: warning: implicit declaration of function 'Pokemon_getAll' [-Wimplicit-function-declaration]
+     if(!Pokemon_getAll(pPokemon, &auxId, auxNombre, auxApellido, &auxPrecioFloat, &auxTipoPokemonint,
+         ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, valorAtaque, ataqueCargado, esVaricolor);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tamanioStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+21:24:48 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:282:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:130:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:282:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:161:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:300:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:276:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:300:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:276:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_removePokemon':
+..\src\Controller.c:97:15: warning: implicit declaration of function 'Pokemon_findById' [-Wimplicit-function-declaration]
+       index = Pokemon_findById(pArrayListPokemon, idPokemon);
+               ^~~~~~~~~~~~~~~~
+..\src\Controller.c:103:8: warning: implicit declaration of function 'Pokemon_printUnPokemon' [-Wimplicit-function-declaration]
+        Pokemon_printUnPokemon(pPokemon);
+        ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_SaveAsText':
+..\src\Controller.c:230:9: warning: implicit declaration of function 'Pokemon_getAll' [-Wimplicit-function-declaration]
+     if(!Pokemon_getAll(pPokemon, &auxId, auxNombre, auxApellido, &auxPrecioFloat, &auxTipoPokemonint,
+         ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, valorAtaque, ataqueCargado, esVaricolor);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* tamanioStr, char* valorAtaqueStr, char* esVaricolorStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+21:24:55 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_PokemonFromText':
+..\src\parser.c:37:20: error: too many arguments to function 'Pokemon_NewParametros'
+     nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, valorAtaque, ataqueCargado, esVaricolor);
+                    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:18:10: note: declared here
+ Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* tamanioStr, char* valorAtaqueStr, char* esVaricolorStr);
+          ^~~~~~~~~~~~~~~~~~~~~
+21:32:12 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_removePokemon':
+..\src\Controller.c:97:15: warning: implicit declaration of function 'Pokemon_findById' [-Wimplicit-function-declaration]
+       index = Pokemon_findById(pArrayListPokemon, idPokemon);
+               ^~~~~~~~~~~~~~~~
+..\src\Controller.c:103:8: warning: implicit declaration of function 'Pokemon_printUnPokemon' [-Wimplicit-function-declaration]
+        Pokemon_printUnPokemon(pPokemon);
+        ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_SaveAsText':
+..\src\Controller.c:230:9: warning: implicit declaration of function 'Pokemon_getAll' [-Wimplicit-function-declaration]
+     if(!Pokemon_getAll(pPokemon, &auxId, auxNombre, auxApellido, &auxPrecioFloat, &auxTipoPokemonint,
+         ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:280:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:128:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:280:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:159:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:298:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:298:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Controller.o: In function `Controller_removePokemon':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:97: undefined reference to `Pokemon_findById'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:103: undefined reference to `Pokemon_printUnPokemon'
+src\Controller.o: In function `Controller_ListPokemon':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:148: undefined reference to `Pokemon_printUnPokemon'
+src\Controller.o: In function `Controller_SaveAsText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:230: undefined reference to `Pokemon_getAll'
+collect2.exe: error: ld returned 1 exit status
+21:33:32 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Controller.o: In function `Controller_removePokemon':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:97: undefined reference to `Pokemon_findById'
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:103: undefined reference to `Pokemon_printUnPokemon'
+src\Controller.o: In function `Controller_ListPokemon':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:148: undefined reference to `Pokemon_printUnPokemon'
+src\Controller.o: In function `Controller_SaveAsText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:230: undefined reference to `Pokemon_getAll'
+collect2.exe: error: ld returned 1 exit status
+21:43:20 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:280:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:128:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:280:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:159:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:298:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:298:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_FindById':
+..\src\Pokemon.c:323:7: warning: implicit declaration of function 'Pokemon_getId' [-Wimplicit-function-declaration]
+   if(!Pokemon_getId(pPokemon, &numeroAux) && numeroAux == numero)
+       ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_ListPokemon':
+..\src\Controller.c:148:8: warning: implicit declaration of function 'Pokemon_printUnPokemon' [-Wimplicit-function-declaration]
+        Pokemon_printUnPokemon(auxPokemon);
+        ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'Controller_SaveAsText':
+..\src\Controller.c:230:9: warning: implicit declaration of function 'Pokemon_getAll' [-Wimplicit-function-declaration]
+     if(!Pokemon_getAll(pPokemon, &auxId, auxNombre, auxApellido, &auxPrecioFloat, &auxTipoPokemonint,
+         ^~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Controller.o: In function `Controller_ListPokemon':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:148: undefined reference to `Pokemon_printUnPokemon'
+src\Controller.o: In function `Controller_SaveAsText':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:230: undefined reference to `Pokemon_getAll'
+src\Pokemon.o: In function `Pokemon_FindById':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Pokemon.c:323: undefined reference to `Pokemon_getId'
+collect2.exe: error: ld returned 1 exit status
+21:45:14 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_ListPokemon':
+..\src\Controller.c:148:8: warning: implicit declaration of function 'Pokemon_printUnPokemon' [-Wimplicit-function-declaration]
+        Pokemon_printUnPokemon(auxPokemon);
+        ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Controller.o: In function `Controller_ListPokemon':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:148: undefined reference to `Pokemon_printUnPokemon'
+src\Pokemon.o: In function `Pokemon_FindById':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Pokemon.c:323: undefined reference to `Pokemon_getId'
+collect2.exe: error: ld returned 1 exit status
+21:45:43 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:280:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:128:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:280:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:159:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:298:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:298:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Controller.o: In function `Controller_ListPokemon':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:148: undefined reference to `Pokemon_printUnPokemon'
+collect2.exe: error: ld returned 1 exit status
+21:45:51 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Controller.o: In function `Controller_ListPokemon':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Controller.c:148: undefined reference to `Pokemon_printUnPokemon'
+collect2.exe: error: ld returned 1 exit status
+21:46:07 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+21:47:50 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+..\src\Final.c: In function 'main':
+..\src\Final.c:13:2: warning: implicit declaration of function 'Controller_loadFromText' [-Wimplicit-function-declaration]
+  Controller_loadFromText("DATA_POKEMONES.csv", listaPokemon);
+  ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Final.c:14:2: warning: implicit declaration of function 'Controller_ListPokemon' [-Wimplicit-function-declaration]
+  Controller_ListPokemon(listaPokemon);
+  ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+21:48:09 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+21:54:12 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:279:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:128:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:279:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:159:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:297:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:273:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:297:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:273:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+21:54:37 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+21:57:40 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:280:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:128:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:280:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:159:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:298:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:298:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+21:57:48 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_GetAll':
+..\src\Pokemon.c:280:37: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                     ^~~~~~~~~~~
+..\src\Pokemon.c:128:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:280:83: warning: passing argument 2 of 'Pokemon_GetEsVaricolor' makes pointer from integer without a cast [-Wint-conversion]
+    && !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+                                                                                   ^~~~~~~~~~~
+..\src\Pokemon.c:159:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:298:89: warning: passing argument 7 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                         ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+..\src\Pokemon.c:298:106: warning: passing argument 8 of 'Pokemon_GetAll' makes integer from pointer without a cast [-Wint-conversion]
+  if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+                                                                                                          ^
+..\src\Pokemon.c:274:5: note: expected 'int' but argument is of type 'int *'
+ int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+     ^~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:03:48 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:04:29 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:04:47 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:05:21 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:05:45 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:08:14 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:299:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("El tipo es &s", auxTipo);
+          ^~~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:11:01 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:299:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("El tipo es &s", auxTipo);
+          ^~~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:11:28 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:12:33 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:15:23 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:16:07 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:16:33 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:16:54 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:17:25 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:17:58 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:18:19 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:18:40 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:18:56 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:19:25 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:23:24 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:302:20: warning: format '%d' expects argument of type 'int', but argument 4 has type 'char *' [-Wformat=]
+   printf("%d\t%s%10d%s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+                    ^
+..\src\Pokemon.c:302:30: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
+   printf("%d\t%s%10d%s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+                              ^
+..\src\Pokemon.c:302:40: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   printf("%d\t%s%10d%s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+                                        ^
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+22:23:36 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:302:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'char *' [-Wformat=]
+   printf("%d\t%s %10d %s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+                     ^
+..\src\Pokemon.c:302:32: warning: format '%s' expects argument of type 'char *', but argument 7 has type 'int' [-Wformat=]
+   printf("%d\t%s %10d %s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+                                ^
+..\src\Pokemon.c:302:42: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   printf("%d\t%s %10d %s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+                                          ^
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:24:12 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:25:28 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:25:44 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_PrintUnPokemon':
+..\src\Pokemon.c:302:23: warning: unknown conversion type character '|' in format [-Wformat=]
+   printf("%d\t|%s\t%10|s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+                       ^
+..\src\Pokemon.c:302:36: warning: format '%d' expects argument of type 'int', but argument 6 has type 'char *' [-Wformat=]
+   printf("%d\t|%s\t%10|s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+                                    ^
+..\src\Pokemon.c:302:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("%d\t|%s\t%10|s\t%s\t%s\t%d\t\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:26:06 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:26:33 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:26:53 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:27:35 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+22:32:48 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+09:04:53 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+09:05:43 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+09:07:59 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+src\Final.o: In function `main':
+C:\Users\matia\OneDrive\Escritorio\Final\Final\Debug/../src/Final.c:16: undefined reference to `Controller_editPokemon'
+collect2.exe: error: ld returned 1 exit status
+09:08:42 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+09:51:38 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+..\src\Final.c: In function 'main':
+..\src\Final.c:16:2: warning: implicit declaration of function 'Controller_AguaVaricolor' [-Wimplicit-function-declaration]
+  Controller_AguaVaricolor(listaPokemon);
+  ^~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+09:53:04 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+10:10:44 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_MapearAtaqueCargado':
+..\src\Controller.c:172:49: error: 'Pokemon_M' undeclared (first use in this function)
+   pArrayListPokemon = ll_map(pArrayListPokemon, Pokemon_M);
+                                                 ^~~~~~~~~
+..\src\Controller.c:172:49: note: each undeclared identifier is reported only once for each function it appears in
+10:11:00 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c: In function 'Pokemon_MapearAtaqueCargado':
+..\src\Pokemon.c:365:36: warning: passing argument 2 of 'Pokemon_GetValorAtaque' makes pointer from integer without a cast [-Wint-conversion]
+   Pokemon_GetValorAtaque(pPokemon, auxValorAtaque);
+                                    ^~~~~~~~~~~~~~
+..\src\Pokemon.c:128:5: note: expected 'int *' but argument is of type 'int'
+ int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.c:365:3: warning: 'auxValorAtaque' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   Pokemon_GetValorAtaque(pPokemon, auxValorAtaque);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_MapearAtaqueCargado':
+..\src\Controller.c:172:49: warning: passing argument 2 of 'll_map' from incompatible pointer type [-Wincompatible-pointer-types]
+   pArrayListPokemon = ll_map(pArrayListPokemon, Pokemon_MapearAtaqueCargado);
+                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:6:0:
+..\src\LinkedList.h:42:13: note: expected 'void * (*)(void *)' but argument is of type 'void (*)(void *)'
+ LinkedList* ll_map(LinkedList* this, void* (*fn)(void* element));
+             ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+10:12:52 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_MapearAtaqueCargado':
+..\src\Controller.c:172:29: warning: passing argument 2 of 'll_map' from incompatible pointer type [-Wincompatible-pointer-types]
+   ll_map(pArrayListPokemon, Pokemon_MapearAtaqueCargado);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:6:0:
+..\src\LinkedList.h:42:13: note: expected 'void * (*)(void *)' but argument is of type 'void (*)(void *)'
+ LinkedList* ll_map(LinkedList* this, void* (*fn)(void* element));
+             ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+..\src\Final.c: In function 'main':
+..\src\Final.c:16:2: warning: implicit declaration of function 'Controller_MapearAtaqueCargado' [-Wimplicit-function-declaration]
+  Controller_MapearAtaqueCargado(listaPokemon);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+10:13:17 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'Controller_MapearAtaqueCargado':
+..\src\Controller.c:172:29: warning: passing argument 2 of 'll_map' from incompatible pointer type [-Wincompatible-pointer-types]
+   ll_map(pArrayListPokemon, Pokemon_MapearAtaqueCargado);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:6:0:
+..\src\LinkedList.h:42:13: note: expected 'void * (*)(void *)' but argument is of type 'void (*)(void *)'
+ LinkedList* ll_map(LinkedList* this, void* (*fn)(void* element));
+             ^~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+10:14:57 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+10:41:27 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+In file included from ..\src\Pokemon.c:7:0:
+..\src\Pokemon.h:40:1: warning: data definition has no type or storage class
+ Pokemon_CountBatalla(void* this);
+ ^~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.h:40:1: warning: type defaults to 'int' in declaration of 'Pokemon_CountBatalla' [-Wimplicit-int]
+..\src\Pokemon.c:371:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ Pokemon_CountBatalla(void* this)
+ ^~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+In file included from ..\src\parser.c:4:0:
+..\src\Pokemon.h:40:1: warning: data definition has no type or storage class
+ Pokemon_CountBatalla(void* this);
+ ^~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.h:40:1: warning: type defaults to 'int' in declaration of 'Pokemon_CountBatalla' [-Wimplicit-int]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cachorro.o" "..\\src\\Cachorro.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+In file included from ..\src\Controller.c:7:0:
+..\src\Pokemon.h:40:1: warning: data definition has no type or storage class
+ Pokemon_CountBatalla(void* this);
+ ^~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.h:40:1: warning: type defaults to 'int' in declaration of 'Pokemon_CountBatalla' [-Wimplicit-int]
+..\src\Controller.c: In function 'Controller_MapearAtaqueCargado':
+..\src\Controller.c:172:29: warning: passing argument 2 of 'll_map' from incompatible pointer type [-Wincompatible-pointer-types]
+   ll_map(pArrayListPokemon, Pokemon_MapearAtaqueCargado);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:6:0:
+..\src\LinkedList.h:42:13: note: expected 'void * (*)(void *)' but argument is of type 'void (*)(void *)'
+ LinkedList* ll_map(LinkedList* this, void* (*fn)(void* element));
+             ^~~~~~
+..\src\Controller.c: In function 'Controller_CountBatalla':
+..\src\Controller.c:183:13: error: 'll_c' undeclared (first use in this function)
+   retorno = ll_c
+             ^~~~
+..\src\Controller.c:183:13: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Controller.c:184:2: error: expected ';' before '}' token
+  }
+  ^
+..\src\Controller.c:179:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  int retorno = 0;
+      ^~~~~~~
+..\src\Controller.c:185:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+10:42:14 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+In file included from ..\src\Controller.c:7:0:
+..\src\Pokemon.h:40:1: warning: data definition has no type or storage class
+ Pokemon_CountBatalla(void* this);
+ ^~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.h:40:1: warning: type defaults to 'int' in declaration of 'Pokemon_CountBatalla' [-Wimplicit-int]
+..\src\Controller.c: In function 'Controller_MapearAtaqueCargado':
+..\src\Controller.c:172:29: warning: passing argument 2 of 'll_map' from incompatible pointer type [-Wincompatible-pointer-types]
+   ll_map(pArrayListPokemon, Pokemon_MapearAtaqueCargado);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:6:0:
+..\src\LinkedList.h:42:13: note: expected 'void * (*)(void *)' but argument is of type 'void (*)(void *)'
+ LinkedList* ll_map(LinkedList* this, void* (*fn)(void* element));
+             ^~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+10:43:28 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+..\src\Final.c: In function 'main':
+..\src\Final.c:16:13: warning: implicit declaration of function 'Controller_CountBatalla' [-Wimplicit-function-declaration]
+  cantidad = Controller_CountBatalla(listaPokemon);
+             ^~~~~~~~~~~~~~~~~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+10:43:46 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+In file included from ..\src\Controller.c:7:0:
+..\src\Pokemon.h:40:1: warning: data definition has no type or storage class
+ Pokemon_CountBatalla(void* this);
+ ^~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.h:40:1: warning: type defaults to 'int' in declaration of 'Pokemon_CountBatalla' [-Wimplicit-int]
+..\src\Controller.c: In function 'Controller_MapearAtaqueCargado':
+..\src\Controller.c:172:29: warning: passing argument 2 of 'll_map' from incompatible pointer type [-Wincompatible-pointer-types]
+   ll_map(pArrayListPokemon, Pokemon_MapearAtaqueCargado);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:6:0:
+..\src\LinkedList.h:42:13: note: expected 'void * (*)(void *)' but argument is of type 'void (*)(void *)'
+ LinkedList* ll_map(LinkedList* this, void* (*fn)(void* element));
+             ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+10:49:33 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+In file included from ..\src\Controller.c:7:0:
+..\src\Pokemon.h:40:1: warning: data definition has no type or storage class
+ Pokemon_CountBatalla(void* this);
+ ^~~~~~~~~~~~~~~~~~~~
+..\src\Pokemon.h:40:1: warning: type defaults to 'int' in declaration of 'Pokemon_CountBatalla' [-Wimplicit-int]
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+10:49:52 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+..\src\Pokemon.c:371:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ Pokemon_CountBatalla(void* this)
+ ^~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+10:50:07 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+11:09:52 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+..\src\Final.c: In function 'main':
+..\src\Final.c:25:18: error: 'opcion' undeclared (first use in this function)
+   if(!getNumero(&opcion, "Ingrese la opcion deseada\n", "Ingreso incorrecto\n", 1, 10, 5))
+                  ^~~~~~
+..\src\Final.c:25:18: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Final.c:33:9: error: 'respuesta' undeclared (first use in this function)
+  }while(respuesta != 10);
+         ^~~~~~~~~
+..\src\Final.c:13:6: warning: unused variable 'ocpion' [-Wunused-variable]
+  int ocpion;
+      ^~~~~~
+..\src\Final.c:12:6: warning: unused variable 'cantidad' [-Wunused-variable]
+  int cantidad;
+      ^~~~~~~~
+..\src\Final.c:10:14: warning: variable 'listaPokemon' set but not used [-Wunused-but-set-variable]
+  LinkedList* listaPokemon;
+              ^~~~~~~~~~~~
+11:10:06 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+..\src\Final.c: In function 'main':
+..\src\Final.c:33:9: error: 'respuesta' undeclared (first use in this function)
+  }while(respuesta != 10);
+         ^~~~~~~~~
+..\src\Final.c:33:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Final.c:12:6: warning: unused variable 'cantidad' [-Wunused-variable]
+  int cantidad;
+      ^~~~~~~~
+..\src\Final.c:10:14: warning: variable 'listaPokemon' set but not used [-Wunused-but-set-variable]
+  LinkedList* listaPokemon;
+              ^~~~~~~~~~~~
+11:18:42 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+..\src\Final.c: In function 'main':
+..\src\Final.c:12:6: warning: unused variable 'cantidad' [-Wunused-variable]
+  int cantidad;
+      ^~~~~~~~
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+11:24:03 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+..\src\Final.c: In function 'main':
+..\src\Final.c:48:20: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+       printf("Hay %d Pokemones que cumplen los requisitos, Batalla Ganada!!!\n");
+                    ^
+..\src\Final.c:52:20: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+       printf("Hay %d Pokemones que cumplen los requisitos, Batalla Perdida...\n");
+                    ^
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+11:24:38 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+11:57:59 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+12:31:11 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pokemon.o" "..\\src\\Pokemon.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 
+Info: Nothing to build for Final
+12:32:43 **** Incremental Build of configuration Debug for project Final ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Final.o" "..\\src\\Final.c" 
+gcc -o Final.exe "src\\Cachorro.o" "src\\Controller.o" "src\\Final.o" "src\\LinkedList.o" "src\\Pokemon.o" "src\\parser.o" "src\\pedidoDatos.o" 

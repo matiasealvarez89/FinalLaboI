@@ -1,0 +1,90 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "LinkedList.h"
+#include "Pokemon.h"
+
+/** \brief Parsea los datos los datos de los pasajeros desde el archivo data.csv (modo texto).
+ *
+ * \param path char*
+ * \param pArrayListPokemon LinkedList*
+ * \return int
+ *
+ */
+int parser_PokemonFromText(FILE* pFile , LinkedList* pArrayListPokemon)
+{
+	int retorno;
+	Pokemon* nuevoPokemon;
+	char numero[50];
+	char nombre[50];
+	char tipo[50];
+	char tamanio[50];
+	char ataqueCargado[50];
+	char valorAtaque[50];
+	char esVaricolor[50];
+
+	retorno = -1;
+
+	if(pFile != NULL && pArrayListPokemon != NULL)
+	{
+		fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n", numero, nombre, tipo, tamanio, ataqueCargado, valorAtaque, esVaricolor);
+		while(!feof(pFile))
+		{
+			if(fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n", numero, nombre, tipo, tamanio,
+					ataqueCargado, valorAtaque, esVaricolor) == 7)
+			{
+
+
+				nuevoPokemon = Pokemon_NewParametros(numero, nombre, tipo, tamanio, ataqueCargado, valorAtaque, esVaricolor);
+
+				if(nuevoPokemon != NULL)
+				{
+					if(ll_add(pArrayListPokemon, nuevoPokemon) != -1)
+					{
+					retorno = 0;
+					}
+				}else
+				{
+					Pokemon_delete(nuevoPokemon);
+				}
+			}
+		}
+	}
+
+
+	return retorno;
+}
+
+/** \brief Parsea los datos los datos de los pasajeros desde el archivo data.csv (modo binario).
+ *
+ * \param path char*
+ * \param pArrayListPokemon LinkedList*
+ * \return int
+ *
+ */
+int parser_PokemonFromBinary(FILE* pFile , LinkedList* pArrayListPokemon)
+{
+	int retorno;
+	Pokemon* pPasajero;
+
+	retorno = -1;
+
+	if(pFile != NULL && pArrayListPokemon)
+	{
+		while(!feof(pFile))
+		{
+			pPasajero = Pokemon_New();
+			if(pPasajero != NULL && fread(pPasajero, sizeof(Pokemon), 1, pFile) == 1)
+			{
+				if(ll_add(pArrayListPokemon, pPasajero) != -1)
+				{
+					retorno = 0;
+				}else
+				{
+					Pokemon_delete(pPasajero);
+				}
+			}
+		}
+	}
+
+    return retorno;
+}

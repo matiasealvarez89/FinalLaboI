@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Final/src/Generico.h&apos; to &apos;Pokemon.h&apos;" description="Rename resource &apos;Generico.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Generico.h" name="Pokemon.h" stamp="1661884006613" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Final/src/Generico.c&apos; to &apos;Pokemon.c&apos;" description="Rename resource &apos;Generico.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Generico.c" name="Pokemon.c" stamp="1661884045053" updateReferences="true"/>
+</session>

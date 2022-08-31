@@ -1,0 +1,223 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "pedidoDatos.h"
+#include "LinkedList.h"
+#include "Pokemon.h"
+
+
+Generico* Generico_New()
+{
+	Generico* pNuevaGenerico;
+
+	pNuevaGenerico = NULL;
+	pNuevaGenerico = (Generico*)calloc(sizeof(Generico),1);
+
+	return pNuevaGenerico;
+}
+
+Generico* Generico_NewParametros(char* idStr, char* nombreStr, char* numUnoStr, char* numDosStr, char* stringUnoStr, char* stringDosStr)
+{
+	Generico* pNuevaGenerico = NULL;
+	Generico* pGenericoAux;
+	int auxID;
+	int auxNumUnoStr;
+	int auxNumDosStr;
+
+	pGenericoAux = Generico_New();
+
+	if(pGenericoAux != NULL && idStr != NULL && nombreStr != NULL && numUnoStr != NULL && numDosStr != NULL && stringUnoStr != NULL && stringDosStr != NULL)
+	{
+		auxID = atoi(idStr);
+		auxNumUnoStr = atoi(numUnoStr);
+		auxNumDosStr = atoi(numDosStr);
+
+
+		if(!Generico_SetId(pGenericoAux, auxID) && !Generico_SetNombre(pGenericoAux, nombreStr) && !Generico_SetNumUno(pGenericoAux, auxNumUnoStr)
+				&& !Generico_SetNumDos(pGenericoAux, auxNumDosStr) && !Generico_SetStringUno(pGenericoAux, stringUnoStr)
+				&& !Generico_SetStringDos(pGenericoAux, stringDosStr))
+		{
+			pNuevaGenerico = pGenericoAux;
+		}
+	}
+
+	return pNuevaGenerico;
+}
+
+int Generico_SetId(Generico* this, int id)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && id >= 0)
+	{
+		this->id = id;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Generico_GetId(Generico* this, int* id)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && id != NULL)
+	{
+		*id = this->id;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Generico_SetNombre(Generico* this, char* nombreGenerico)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && nombreGenerico != NULL)
+	{
+		strcpy(this->nombreGenerico, nombreGenerico);
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Generico_GetNombre(Generico* this, char* nombreGenerico)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && nombreGenerico != NULL)
+	{
+		strcpy(nombreGenerico, this->nombreGenerico);
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int Generico_SetNumUno(Generico* this, int numUno)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numUno >= 0)
+	{
+		this->numUno = numUno;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Generico_GetNumUno(Generico* this, int* numUno)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numUno != NULL)
+	{
+		*numUno = this->numUno;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+
+int Generico_SetNumDos(Generico* this, int numDos)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numDos >= 0)
+	{
+		this->numDos = numDos;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Generico_GetnumDos(Generico* this, int* numDos)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numDos != NULL)
+	{
+		*numDos = this->numDos;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+char Generico_SetStringUno(Generico* this, char* stringUno)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && stringUno != NULL)
+		{
+			strcpy(this->stringUno, stringUno);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+char Generico_GetStringUno(Generico* this, char* stringUno)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && stringUno != NULL)
+		{
+			strcpy(stringUno, this->stringUno);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+char Generico_SetStringDos(Generico* this, char* stringDos)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && stringDos != NULL)
+		{
+			strcpy(this->stringUno, stringDos);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+char Generico_GetstringDos(Generico* this, char* stringDos)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && stringDos != NULL)
+		{
+			strcpy(stringDos, this->stringDos);
+			retorno = 0;
+		}
+		return retorno;
+}

@@ -1,0 +1,20 @@
+#ifndef GENERICO_H_
+#define GENERICO_H_
+
+typedef struct
+{
+	int id;
+	char nombreGenerico[50];
+	int numUno;
+	int numDos;
+	char stringUno[50];
+	char stringDos[50];
+}Generico;
+
+#endif /* GENERICO_H_ */
+
+Generico* Generico_New();
+Generico* Generico_newParametros(char* idStr, char* nombreStr, char* numUnoStr, char* stringUnoStr, char* reservadoStr, char* generoStr);
+int Generico_SetId(Generico* this, int id);
+
+

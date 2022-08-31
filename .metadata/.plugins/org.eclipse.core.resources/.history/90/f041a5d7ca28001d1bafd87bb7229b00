@@ -1,0 +1,306 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+#include "LinkedList.h"
+#include "Pokemon.h"
+#include "parser.h"
+#include "pedidoDatos.h"
+#include "Controller.h"
+
+
+
+/** \brief Carga los datos de los Pokemons desde el archivo data.csv (modo texto).
+ *
+ * \param path char*
+ * \param pArrayListPokemon LinkedList*
+ * \return int
+ *
+ */
+int Controller_loadFromText(char* path , LinkedList* pArrayListPokemon)
+{
+	int retorno;
+	FILE* pFile;
+
+	retorno = -1;
+
+	if (path != NULL && pArrayListPokemon != NULL) {
+		pFile = fopen(path, "r");
+
+		if (pFile != NULL) {
+			retorno = parser_PokemonFromText(pFile, pArrayListPokemon);
+			fclose(pFile);
+		}
+	}
+
+	return retorno;
+}
+
+/** \brief Carga los datos de los Pokemons desde el archivo data.csv (modo binario).
+ *
+ * \param path char*
+ * \param pArrayListPokemon LinkedList*
+ * \return int
+ *
+ */
+int Controller_loadFromBinary(char* path , LinkedList* pArrayListPokemon)
+{
+    int retorno;
+    FILE* pFile;
+
+    retorno = -1;
+
+	if(path != NULL && pArrayListPokemon != NULL)
+	{
+		pFile = fopen(path, "rb");
+
+		if(pFile != NULL)
+		{
+			parser_PokemonFromBinary(pFile, pArrayListPokemon);
+			retorno = 0;
+			fclose(pFile);
+		}
+	}
+
+
+	return retorno;
+}
+
+
+
+
+
+/** \brief Baja de Pokemon
+ *
+ * \param path char*
+ * \param pArrayListPokemon LinkedList*
+ * \return int
+ *
+ */
+int Controller_removePokemon(LinkedList* pArrayListPokemon)
+{
+    int retorno;
+    Pokemon* pPokemon;
+    int idPokemon;
+    int index;
+    char respuesta;
+
+
+
+    retorno = -1;
+
+    if(pArrayListPokemon != NULL && !ll_isEmpty(pArrayListPokemon))
+    {
+    	if(!getNumero(&idPokemon, "Ingrese el Numero del Pokemon que desea Eliminar\n", "No existe ese Numero\n", 1, 151, 3))
+    	{
+    		index = Pokemon_FindById(pArrayListPokemon, idPokemon);
+
+    		if(index != -1)
+    		{
+    			pPokemon = (Pokemon*)ll_get(pArrayListPokemon, index);
+    			printf("ID 	   Nombre 	Apellido	Precio		CodigoVuelo 	TipoPokemon	FlightStatus\n");
+    			Pokemon_PrintUnPokemon(pPokemon);
+    			if(!getRespuestaDosChar(&respuesta, "Confirma que desea Elminarlo?(S) SI N) NO)\n", "Ingreso incorrecto\n", 's', 'n', 3))
+    			{
+    				if(respuesta == 's')
+    				{
+    					ll_remove(pArrayListPokemon, index);
+    					Pokemon_delete(pPokemon);
+    					retorno = 0;
+    				}else if(respuesta == 'n')
+    				{
+    					printf("No se borro.\n");
+    				}
+    			}
+    		}
+    	}
+    }
+
+    return retorno;
+}
+
+/** \brief Listar Pokemons
+ *
+ * \param path char*
+ * \param pArrayListPokemon LinkedList*
+ * \return int
+ *
+ */
+int Controller_ListPokemon(LinkedList* pArrayListPokemon)
+{
+    int retorno;
+    Pokemon* auxPokemon;
+    int len;
+
+    retorno = -1;
+
+    len = ll_len(pArrayListPokemon);
+
+    if(pArrayListPokemon != NULL && len > 0)
+    {
+    	if(len > 0)
+    	{
+    		printf("Numero\tNombre\t\tTipo\t\tTamaño\t\tAtaqueCargado\t\tValorAtaque\tEsVaricolor\n");
+    		for(int i =0; i < len; i++)
+    		{
+    			auxPokemon =(Pokemon*)ll_get(pArrayListPokemon, i);
+    			Pokemon_PrintUnPokemon(auxPokemon);
+    		}
+    	}
+    }
+
+    return retorno;
+}
+
+///** \brief Ordenar Pokemons
+// *
+// * \param path char*
+// * \param pArrayListPokemon LinkedList*
+// * \return int
+// *
+// */
+//int Controller_sortPokemon(LinkedList* pArrayListPokemon)
+//{
+//	int retorno;
+//	int opcion;
+//	int orden;
+//
+//	printf("1) Por orden alfabatico\n"
+//			"2) Por Precio\n"
+//			"3) Por Id\n");
+//
+//	if(!getNumero(&opcion, "Ingrese la opcion deseada\n", "Ingreso incorrecto\n", 1, 3, 3)
+//			&& !getNumero(&orden, "1) Orden Descendente\n2) Orden Ascendente\nSeleccione el orden deseado\n"
+//					, "Ingreso incorrecto\n", 1, 2, 3))
+//	{
+//		orden--;
+//		switch(opcion)
+//		{
+//			case 1:
+//				retorno = ll_sort(pArrayListPokemon, Pokemon_compareByApellido , orden);
+//				break;
+//			case 2:
+//				retorno = ll_sort(pArrayListPokemon, Pokemon_compareByPrecio , orden);
+//				break;
+//			case 3:
+//				retorno = ll_sort(pArrayListPokemon, Pokemon_compareById , orden);
+//				break;
+//		}
+//	}
+//
+//	return retorno;
+//}
+
+///** \brief Guarda los datos de los Pokemons en el archivo data.csv (modo texto).
+// *
+// * \param path char*
+// * \param pArrayListPokemon LinkedList*
+// * \return int
+// *
+// */
+//int Controller_SaveAsText(char* path , LinkedList* pArrayListPokemon)
+//{
+//	int retorno = -1;
+//	FILE* pFile;
+//	int len;
+//	Pokemon* pPokemon;
+//	int auxId;
+//	char auxNombre[50];
+//	char auxApellido[50];
+//	float auxPrecioFloat;
+//	char auxCodigoVuelo[50];
+//	int auxTipoPokemonint;
+//	char auxTipoPokemon[50];
+//	int auxStatusFlightInt;
+//	char auxStatusFlight[50];
+//
+//	retorno = -1;
+//	len = ll_len(pArrayListPokemon);
+//
+//	if(path != NULL && pArrayListPokemon != NULL)
+//	{
+//		pFile = fopen(path, "w");
+//		if(pFile != NULL)
+//		{
+//			fprintf(pFile, "id,name,lastname,price,flycode,typePokemon,statusFlight\n");
+//			for(int i = 0; i < len; i++)
+//			{
+//				pPokemon = (Pokemon*)ll_get(pArrayListPokemon, i);
+//				if(!Pokemon_getAll(pPokemon, &auxId, auxNombre, auxApellido, &auxPrecioFloat, &auxTipoPokemonint,
+//						auxCodigoVuelo, &auxStatusFlightInt))
+//				{
+//					switch(auxTipoPokemonint)
+//					{
+//						case 1:
+//							strcpy(auxTipoPokemon, "FirstClass");
+//							break;
+//						case 2:
+//							strcpy(auxTipoPokemon,"ExecutiveClass");
+//							break;
+//						case 3:
+//							strcpy(auxTipoPokemon, "EconomyClass");
+//							break;
+//					}
+//
+//					switch(auxStatusFlightInt)
+//					{
+//						case 1:
+//							strcpy(auxStatusFlight, "Aterrizado");
+//							break;
+//						case 2:
+//							strcpy(auxStatusFlight, "En Horario");
+//							break;
+//						case 3:
+//							strcpy(auxStatusFlight, "En Vuelo");
+//							break;
+//					}
+//					fprintf(pFile, "%d,%s,%s,%f,%s,%s,%s\n", auxId,auxNombre, auxApellido, auxPrecioFloat, auxCodigoVuelo, auxTipoPokemon, auxStatusFlight);
+//				}
+//			}
+//			retorno = 0;
+//			fclose(pFile);
+//		}
+//	}
+//
+//    return retorno;
+//}
+//
+///** \brief Guarda los datos de los Pokemons en el archivo data.csv (modo binario).
+// *
+// * \param path char*
+// * \param pArrayListPokemon LinkedList*
+// * \return int
+// *
+// */
+//int Controller_SaveAsBinary(char* path , LinkedList* pArrayListPokemon)
+//{
+//    int retorno;
+//    int len;
+//    FILE* pFile;
+//    Pokemon* pPokemon;
+//
+//    len = ll_len(pArrayListPokemon);
+//    retorno = -1;
+//
+//    if(path != NULL && pArrayListPokemon != NULL)
+//    {
+//    	pFile = fopen(path, "wb");
+//
+//    	if(pFile != NULL && len > 0)
+//    	{
+//    		for(int i = 0; i < len; i++)
+//    		{
+//    			pPokemon = (Pokemon*)ll_get(pArrayListPokemon, i);
+//    			fwrite(pPokemon, sizeof(Pokemon), 1, pFile);
+//    		}
+//    		fclose(pFile);
+//    	}
+//    	retorno = 0;
+//    }
+//
+//
+//	return retorno;
+//}
+
+

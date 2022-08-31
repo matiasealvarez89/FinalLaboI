@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="Pokemon"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="pasajero"/>
+			<item value="Passenger"/>
+			<item value="flightStatus"/>
+			<item value="NumDos"/>
+			<item value="Generico"/>
+			<item value="raza"/>
+			<item value="Cachorro"/>
+			<item value="dias"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Pokemon"/>
+			<item value="esVaricolor"/>
+			<item value="EsVaricolor"/>
+			<item value="stringUno"/>
+			<item value="Generico"/>
+			<item value="numUno"/>
+		</list>
+	</section>
+</section>

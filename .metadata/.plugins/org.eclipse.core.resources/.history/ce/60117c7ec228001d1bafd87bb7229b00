@@ -1,0 +1,13 @@
+int controller_loadFromText(char* path , LinkedList* pArrayListPokemon);
+int controller_loadFromBinary(char* path , LinkedList* pArrayListPokemon);
+int controller_addPokemon(LinkedList* pArrayListPokemon);
+int controller_editPokemon(LinkedList* pArrayListPokemon);
+int controller_removePokemon(LinkedList* pArrayListPokemon);
+int controller_ListPokemon(LinkedList* pArrayListPokemon);
+int controller_sortPokemon(LinkedList* pArrayListPokemon);
+int controller_saveAsText(char* path , LinkedList* pArrayListPokemon);
+int controller_saveAsBinary(char* path , LinkedList* pArrayListPokemon);
+int controller_idMax(char* path);
+int controller_idMaxGuardar(char* path, int idNuevo);
+
+

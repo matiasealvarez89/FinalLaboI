@@ -1,0 +1,305 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "pedidoDatos.h"
+#include "LinkedList.h"
+#include "Pokemon.h"
+
+/// @brief
+///
+/// @return
+Pokemon* Pokemon_New()
+{
+	Pokemon* pNuevaPokemon;
+
+	pNuevaPokemon = NULL;
+	pNuevaPokemon = (Pokemon*)calloc(sizeof(Pokemon),1);
+
+	return pNuevaPokemon;
+}
+
+
+Pokemon* Pokemon_NewParametros(char* numeroStr, char* nombreStr, char* tipoStr, char* valorAtaqueStr, char* esVaricolorStr, char* tipoStr, char* tamanioStr)
+{
+	Pokemon* pNuevaPokemon = NULL;
+	Pokemon* pPokemonAux;
+	int auxID;
+	int auxValorAtaqueStr;
+	int auxEsVaricolorStr;
+
+	pPokemonAux = Pokemon_New();
+
+	if(pPokemonAux != NULL && numeroStr != NULL && nombreStr != NULL && valorAtaqueStr != NULL && esVaricolorStr != NULL && tipoStr != NULL && tamanioStr != NULL)
+	{
+		auxID = atoi(numeroStr);
+		auxValorAtaqueStr = atoi(valorAtaqueStr);
+		auxEsVaricolorStr = atoi(esVaricolorStr);
+
+
+		if(!Pokemon_SetNumero(pPokemonAux, auxID) && !Pokemon_SetNombre(pPokemonAux, nombreStr) && !Pokemon_SetValorAtaque(pPokemonAux, auxValorAtaqueStr)
+				&& !Pokemon_SetEsVaricolor(pPokemonAux, auxEsVaricolorStr) && !Pokemon_SetTipo(pPokemonAux, tipoStr)
+				&& !Pokemon_SetTamanio(pPokemonAux, tamanioStr) && !Pokemon_SetTipo(pPokemonAux, tipoStr))
+		{
+			pNuevaPokemon = pPokemonAux;
+		}
+	}
+
+	return pNuevaPokemon;
+}
+
+void Pokemon_delete(Pokemon* this)
+{
+	if(this != NULL)
+	{
+		free(this);
+	}
+}
+
+int Pokemon_SetNumero(Pokemon* this, int numero)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numero >= 0)
+	{
+		this->numero = numero;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_GetNumero(Pokemon* this, int* numero)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && numero != NULL)
+	{
+		*numero = this->numero;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_SetNombre(Pokemon* this, char* nombre)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && nombre != NULL)
+	{
+		strcpy(this->nombre, nombre);
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int Pokemon_GetNombre(Pokemon* this, char* nombre)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && nombre != NULL)
+	{
+		strcpy(nombre, this->nombre);
+		retorno = 0;
+	}
+	return retorno;
+}
+
+int Pokemon_SetValorAtaque(Pokemon* this, int valorAtaque)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && valorAtaque >= 0)
+	{
+		this->valorAtaque = valorAtaque;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_GetValorAtaque(Pokemon* this, int* valorAtaque)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && valorAtaque != NULL)
+	{
+		*valorAtaque = this->valorAtaque;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+
+int Pokemon_SetEsVaricolor(Pokemon* this, int esVaricolor)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && esVaricolor >= 0)
+	{
+		this->esVaricolor = esVaricolor;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_GetEsVaricolor(Pokemon* this, int* esVaricolor)
+{
+	int retorno;
+	retorno = -1;
+
+	if(this != NULL && esVaricolor != NULL)
+	{
+		*esVaricolor = this->esVaricolor;
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+int Pokemon_SetTipo(Pokemon* this, char* tipo)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && tipo != NULL)
+		{
+			strcpy(this->tipo, tipo);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+int Pokemon_GetTipo(Pokemon* this, char* tipo)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && tipo != NULL)
+		{
+			strcpy(tipo, this->tipo);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+int Pokemon_SetTamanio(Pokemon* this, char* tamanio)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && tamanio != NULL)
+		{
+			strcpy(this->tipo, tamanio);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+int Pokemon_GetTamanio(Pokemon* this, char* tamanio)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && tamanio != NULL)
+		{
+			strcpy(tamanio, this->tamanio);
+			retorno = 0;
+		}
+		return retorno;
+}
+
+int Pokemon_SetAtaqueCargado(Pokemon* this, char* ataqueCargado)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && ataqueCargado != NULL)
+		{
+			strcpy(this->ataqueCargado, ataqueCargado);
+			retorno = 0;
+		}
+
+
+		return retorno;
+}
+
+int Pokemon_GetAtaqueCargado(Pokemon* this, char* ataqueCargado)
+{
+	int retorno;
+		retorno = -1;
+
+		if(this != NULL && ataqueCargado != NULL)
+		{
+			strcpy(ataqueCargado, this->ataqueCargado);
+			retorno = 0;
+		}
+		return retorno;
+}
+
+int Pokemon_SetAll(Pokemon* this, int numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+{
+	int retorno = -1;
+
+	if(this != NULL && !Pokemon_SetNumero(this, numero) && !Pokemon_SetNombre(this, nombre) && !Pokemon_SetTipo(this, tipo)
+			&& !Pokemon_SetTamanio(this, tamanio) && !Pokemon_SetAtaqueCargado(this, ataqueCargado)
+			&& !Pokemon_SetValorAtaque(this, valorAtaque) && !Pokemon_SetEsVaricolor(this, esVaricolor))
+	{
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+int Pokemon_GetAll(Pokemon* this, int* numero, char* nombre, char* tipo, char* tamanio, char* ataqueCargado, int valorAtaque, int esVaricolor)
+{
+	int retorno = -1;
+
+	if(this != NULL && !Pokemon_GetNumero(this, numero) && !Pokemon_GetNombre(this, nombre) && !Pokemon_GetTipo(this, tipo)
+			&& !Pokemon_GetTamanio(this, tamanio) && !Pokemon_GetAtaqueCargado(this, ataqueCargado)
+			&& !Pokemon_GetValorAtaque(this, valorAtaque) && !Pokemon_GetEsVaricolor(this, esVaricolor))
+	{
+		retorno = 0;
+	}
+
+	return retorno;
+}
+
+void Pokemon_PrintUnPokemon(Pokemon* this)
+{
+	int auxNumero;
+	char auxNombre[50];
+	char auxTipo[50];
+	char auxTamanio[50];
+	char auxAtaqueCargado[50];
+	int auxValorAtaque;
+	int auxEsVaricolor;
+
+	if(!Pokemon_GetAll(this, &auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, &auxValorAtaque, &auxEsVaricolor))
+	{
+		printf("%d\t%s\t\t%s\t\t%s\t\t%s\t\t%d\t%d\n", auxNumero, auxNombre, auxTipo, auxTamanio, auxAtaqueCargado, auxValorAtaque, auxEsVaricolor);
+	}
+
+}

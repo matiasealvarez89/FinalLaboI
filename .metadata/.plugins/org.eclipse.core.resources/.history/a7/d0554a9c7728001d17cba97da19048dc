@@ -1,0 +1,15 @@
+#ifndef GENERICO_H_
+#define GENERICO_H_
+
+typedef struct
+{
+	int id;
+	char nombre[50];
+	int numUno;
+	int numDos;
+	int numTres;
+	char stringUno[50];
+	char stringDos[50];
+}Generico;
+
+#endif /* GENERICO_H_ */

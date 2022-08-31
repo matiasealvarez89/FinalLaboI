@@ -1,0 +1,35 @@
+#ifndef Pokemon_H_
+#define Pokemon_H_
+
+typedef struct
+{
+	int id;
+	char nombrePokemon[50];
+	int numUno;
+	int numDos;
+	char stringUno[50];
+	char stringDos[50];
+}Pokemon;
+
+#endif /* Pokemon_H_ */
+
+Pokemon* Pokemon_New();
+Pokemon* Pokemon_NewParametros(char* idStr, char* nombreStr, char* numUnoStr, char* numDosStr, char* stringUnoStr, char* stringDosStr);
+int Pokemon_SetId(Pokemon* this, int id);
+int Pokemon_GetId(Pokemon* this, int* id);
+int Pokemon_SetNombre(Pokemon* this, char* nombrePokemon);
+int Pokemon_GetNombre(Pokemon* this, char* nombrePokemon);
+int Pokemon_SetNumUno(Pokemon* this, int numUno);
+int Pokemon_GetNumUno(Pokemon* this, int* numUno);
+int Pokemon_SetNumDos(Pokemon* this, int numDos);
+int Pokemon_GetnumDos(Pokemon* this, int* numDos);
+char Pokemon_SetStringUno(Pokemon* this, char* stringUno);
+char Pokemon_GetStringUno(Pokemon* this, char* stringUno);
+char Pokemon_SetStringDos(Pokemon* this, char* stringDos);
+char Pokemon_GetstringDos(Pokemon* this, char* stringDos);
+
+
+
+
+
+
